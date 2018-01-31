@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+<title>Cryptomarket - exchange cryptocurrency</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="plugins/datatables/datatables.min.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="plugins/datatables/scroller.dataTables.min.css"/> -->
+
+<link rel="stylesheet" href="css/style.css?v=3.1">
+
+</head>
+<body>
+
+<div id="psst-1" class="psst psst--dismissed">
+	<div class="cont">
+		<div class="psst-inner">
+	
+			<button class="btn-close psst-close js-psst-close" data-psst-dismiss="psst-1" title="Dismiss">Dismiss</button>
+
+			<div class="psst-dismissed-text">
+				<p>Dismissed message </p>
+				<button class="psst-show js-psst-show" data-psst-show="psst-1" title="Dismiss">Show</button>
+			</div>
+
+			<div class="psst-content js-psst-content">
+				<h3 class="psst-title">Hey, psst!</h3>
+				<p>I fear you forgot to finish the deal <a href="#">№123465</a>. If you have problems with this deal, please don't hesitate to <a href="#">contact support team</a>.</p>
+			</div>
+
+		</div>	
+	</div>
+</div>
+
+<div id="psst-2" class="psst">
+	<div class="cont">
+		<div class="psst-inner">
+	
+			<button class="btn-close psst-close js-psst-close" data-psst-dismiss="psst-2" title="Dismiss">Dismiss</button>
+
+			<div class="psst-dismissed-text">
+				<p>Dismissed message </p>
+				<button class="psst-show js-psst-show" data-psst-show="psst-2" title="Dismiss">Show</button>
+			</div>
+
+			<div class="psst-content js-psst-content">
+				<h3 class="psst-title">Hey, psst!</h3>
+				<p>I fear you forgot to finish the deal <a href="#">№123465</a>. If you have problems with this deal, please don't hesitate to <a href="#">contact support team</a>.</p>
+			</div>
+
+		</div>	
+	</div>
+</div>
+
+
+<div class="rates">
+
+	<div class="rates-track js-rates-track">
+		<div class="rates-item">
+			<div class="rates-cur">BTC</div>
+			<div class="rates-val"><span class="rates-val__symbol">$</span><span class="rates-val__number">11280</span></div>
+		</div>
+		<div class="rates-item">
+			<div class="rates-cur">BTC</div>
+			<div class="rates-val"><span class="rates-val__symbol">$</span><span class="rates-val__number">11280</span></div>
+		</div>
+		<div class="rates-item">
+			<div class="rates-cur">BTC</div>
+			<div class="rates-val"><span class="rates-val__symbol">$</span><span class="rates-val__number">11280</span></div>
+		</div>
+		<div class="rates-item">
+			<div class="rates-cur">BTC</div>
+			<div class="rates-val"><span class="rates-val__symbol">$</span><span class="rates-val__number">11280</span></div>
+		</div>
+		<div class="rates-item">
+			<div class="rates-cur">BTC</div>
+			<div class="rates-val"><span class="rates-val__symbol">$</span><span class="rates-val__number">11280</span></div>
+		</div>
+		<div class="rates-item">
+			<div class="rates-cur">BTC</div>
+			<div class="rates-val"><span class="rates-val__symbol">$</span><span class="rates-val__number">11280</span></div>
+		</div>
+		<div class="rates-item">
+			<div class="rates-cur">BTC</div>
+			<div class="rates-val"><span class="rates-val__symbol">$</span><span class="rates-val__number">11280</span></div>
+		</div>
+		<div class="rates-item">
+			<div class="rates-cur">BTC</div>
+			<div class="rates-val"><span class="rates-val__symbol">$</span><span class="rates-val__number">11280</span></div>
+		</div>
+		<div class="rates-item">
+			<div class="rates-cur">BTC</div>
+			<div class="rates-val"><span class="rates-val__symbol">$</span><span class="rates-val__number">11280</span></div>
+		</div>
+		<div class="rates-item">
+			<div class="rates-cur">BTC</div>
+			<div class="rates-val"><span class="rates-val__symbol">$</span><span class="rates-val__number">11280</span></div>
+		</div>
+		<div class="rates-item">
+			<div class="rates-cur">BTC</div>
+			<div class="rates-val"><span class="rates-val__symbol">$</span><span class="rates-val__number">11280</span></div>
+		</div>
+		<div class="rates-item">
+			<div class="rates-cur">BTC</div>
+			<div class="rates-val"><span class="rates-val__symbol">$</span><span class="rates-val__number">11280</span></div>
+		</div>
+		<div class="rates-item">
+			<div class="rates-cur">BTC</div>
+			<div class="rates-val"><span class="rates-val__symbol">$</span><span class="rates-val__number">11280</span></div>
+		</div>
+		<div class="rates-item">
+			<div class="rates-cur">BTC</div>
+			<div class="rates-val"><span class="rates-val__symbol">$</span><span class="rates-val__number">11280</span></div>
+		</div>
+		<div class="rates-item">
+			<div class="rates-cur">BTC</div>
+			<div class="rates-val"><span class="rates-val__symbol">$</span><span class="rates-val__number">11280</span></div>
+		</div>
+	</div>
+
+	<div class="rates-btns">
+		<button class="rates-btn rates-prev js-rates-prev">Влево</button>
+		<button class="rates-btn rates-next js-rates-next">Вправо</button>
+	</div>
+
+</div>
+
+
+<header class="header">
+	<div class="cont">
+		<nav class="header-nav">
+			<div class="row align-items-center">
+
+				<div class="col col-sm-auto header-col header-col--logo">
+					<a href="/" class="logo"><img src="assets/img/logo.svg" alt="Cryptomarket"></a>
+				</div>
+
+				<div class="col-auto header-col header-col--menu-btn">
+					<div class="menu-toggle">
+						<button class="menu-toggle__btn btn-hamburger js-menu-btn">
+							Menu
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>	
+					</div>
+				</div>
+
+				<div class="col-12 col-sm header-col heaer-col--menu">
+					<div class="menu">
+						<ul class="menu-links js-menu-links">
+							<li class="menu-item"><a href="sample-page.html">About</a></li>
+							<li class="menu-item"><a href="sample-page.html">Support</a></li>
+							<li class="menu-item"><a href="sample-page.html">FAQ</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-auto header-col header-col--login">
+					<div class="header-login">
+						<div class="header-user">
+<!-- 							<div class="header-user-col header-user-col--notifications">
+								<button class="icon-btn notifications-icon"><span class="icon-btn__data">3</span></button>
+							</div> -->
+							<div class="header-user-col header-user-col--menu">
+
+								<div class="header-user-menu">
+									<button class="header-user-menu-btn js-header-user-dropdown-btn">
+										<span class="header-user-nickname">memegod</span>
+										<div class="header-user-pic"><img src="img/profile-pic.png" alt=""></div>
+									</button>
+								</div>
+
+								<div class="header-user-dropdown js-header-user-dropdown">
+									<div class="header-user-dropdown-inner">
+										<ul>
+											<li><a href="profile-mine.html">My profile & deals</a></li>
+											<li><a href="profile-edit.html">Profile settings</a></li>
+											<li><a href="#">Log Out</a></li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+	</div>
+</header>
+
+
+
+
+
+<section class="quick-ex">
+
+
+<!-- 	<div class="dem-blobs">
+
+		<div class="bg-blob bg-blob-1">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="loader">
+				<defs>
+					<filter id="goo">
+						<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+						<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+						<feBlend in2="goo" in="SourceGraphic" result="mix" />
+					</filter>
+					<linearGradient id="MyGradient">
+							<stop offset="5%"  stop-color="#367AFF"/>
+							<stop offset="40%" stop-color="#36DBFF"/>
+							<stop offset="100%" stop-color="#D736FF"/>
+					</linearGradient>
+				</defs>
+				<mask id="maska">
+					<g class="blobs">
+						<circle class="blob" cx="440" cy="200" r="30" transform="rotate(0) translate(0, 0) rotate(0)"/>
+						<circle class="blob" cx="500" cy="320" r="70"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+						<circle class="blob" cx="250" cy="390" r="50"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+						<circle class="blob" cx="380" cy="390" r="100"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+						<circle class="blob" cx="580" cy="410" r="60"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+						<circle class="blob" cx="100" cy="420" r="70"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+					</g>
+				</mask>
+				<rect x="0" y="0"  mask="url(#maska)" fill="url(#MyGradient)" width="900" height="600">
+			</svg>	
+		</div>	
+
+		<div class="bg-blob bg-blob-2">
+			<svg id="organic-blob" width="700" height="700" xmlns="http://www.w3.org/2000/svg" filter="url(#goo)" fill="#36DBFF">
+			  <defs>
+			    <filter id="goo">
+			      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+			      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+			      <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+			    </filter>
+			  </defs>
+			 <g>
+			  <circle r="140" cy="145" cx="150">
+			    <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 145 150" to="360 145 150" dur="4s" repeatCount="indefinite"/>
+			   </circle>
+			  <circle r="140" cy="155" cx="150">
+			    <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="360 155 150" to="0 155 150" dur="8s" repeatCount="indefinite"/>
+			   </circle>
+			  <circle r="140" cy="150" cx="145">
+			    <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 150 145" to="360 150 145" dur="12s" repeatCount="indefinite"/>
+			   </circle>
+			  <circle r="140" cy="150" cx="155">
+			    <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="360 150 155" to="0 150 155" dur="10s" repeatCount="indefinite"/>
+			   </circle>
+			 </g>
+			</svg>
+		</div>
+
+		<div class="bg-blob bg-blob-3">
+			<svg id="organic-blob" width="600" height="600" xmlns="http://www.w3.org/2000/svg" filter="url(#goo)" fill="#03A9F4">
+			  <defs>
+			    <filter id="goo">
+			      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+			      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+			      <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+			    </filter>
+			  </defs>
+			 <g>
+			  <circle r="100" cy="145" cx="150">
+			    <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 145 150" to="360 145 150" dur="4s" repeatCount="indefinite"/>
+			   </circle>
+			  <circle r="100" cy="155" cx="150">
+			    <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="360 155 150" to="0 155 150" dur="8s" repeatCount="indefinite"/>
+			   </circle>
+			  <circle r="100" cy="150" cx="145">
+			    <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 150 145" to="360 150 145" dur="12s" repeatCount="indefinite"/>
+			   </circle>
+			  <circle r="100" cy="150" cx="155">
+			    <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="360 150 155" to="0 150 155" dur="10s" repeatCount="indefinite"/>
+			   </circle>
+			 </g>
+			</svg>
+		</div>
+
+	</div> -->
+
+	<div class="cont">
+		<div class="row">
+			
+			<div class="col-12 col-md-4 quick-ex-col quick-ex-col--curr-1">
+				<div class="quick-ex-curr">
+					<div class="quick-ex-curr__title">Buying...</div>
+					<div class="quick-ex-form">
+						<div class="quick-ex-form__number">
+							<input class="js-price-input no-spinners" type="number" min="0" value="1" autofocus>
+						</div>
+						<div class="quick-ex-form__currency">
+							<select>
+								<option>BTC</option>
+								<option>ETH</option>
+								<option>XMR</option>
+								<option>BTC</option>
+								<option>ETH</option>
+								<option>USD</option>
+								<option>BTC</option>
+								<option>ETH</option>
+								<option>XMR</option>
+							</select>
+						</div>
+					</div>
+					<div class="quick-ex-rate-tip"><span>1</span> BTC  <span class="quick-ex-rate-tip__equal-sign">=</span>  <span>11455</span> USD</div>
+				</div>
+			</div>
+
+			<div class="col-12  col-md-auto quick-ex-col quick-ex-col--switch">
+				<div class="quick-ex-switch"><button class="bubbly-button js-quick-ex-switch-btn">Switch currencies</button></div>
+			</div>
+			
+			<div class="col-12 col-md-4 quick-ex-col quick-ex-col-curr-2">
+				<div class="quick-ex-curr">
+					<div class="quick-ex-curr__title">for...</div>
+					<div class="quick-ex-form">
+						<div class="quick-ex-form__number">
+							<input type="number" min="0" class="js-price-input no-spinners" value="0.10012" autofocus>
+						</div>
+						<div class="quick-ex-form__currency">
+							<select>
+								<option>USD</option>
+								<option>BTC</option>
+								<option>ETH</option>
+								<option>XMR</option>
+								<option>BTC</option>
+								<option>ETH</option>
+								<option>XMR</option>
+								<option>BTC</option>
+								<option>ETH</option>
+								<option>XMR</option>
+							</select>
+						</div>
+					</div>
+					<div class="quick-ex-rate-tip"><span>1</span> USD  <span class="quick-ex-rate-tip__equal-sign">=</span>  <span>0.00000343</span> BTC</div>
+				</div>
+			</div>
+
+			<div class="col quick-ex-col quick-ex-col--submit">
+				<button class="btn btn-primary btn-lg quick-ex-submit">Quick exchange</button>
+			</div>
+
+		</div>	
+	</div>
+</section>
+
+
+<section class="section home-market">
+	<div class="cont">
+
+		<div class="row">
+
+			<div class="col-12 col-lg-6 home-market-col home-market-col--new-offer">
+				<div class="new-offer">
+					
+					<div class="section-title new-offer-choose home-market-title">
+						I want to
+						<form id="switch-offer-type" class="radios">
+							<label class="radio-text">
+								<input name="new-offer-type" type="radio" value="buy" checked>
+								<span class="radio-text__text">buy</span>
+							</label>
+							<label class="radio-text">
+								<input name="new-offer-type" type="radio" value="sell">
+								<span class="radio-text__text">sell</span>
+							</label>
+						</form>
+					</div>
+
+					<div class="new-offer-buying new-offer-form new-offer-form--active js-new-offer-form js-new-offer-buying">
+	
+	<div class="new-offer-tip">Highest bid: <div class="new-offer-tip-value js-new-offer-tip-value-buying" data-value="11000"><span>11000</span> USD</div></div>
+
+	<div class="new-offer-box">
+		<div class="new-offer-box__inner">
+
+			<div class="new-offer-amount">
+				<div class="row align-items-center">
+					<div class="col-3">
+						<div class="new-offer-amount__title">Buying</div>
+					</div>
+					<div class="col">
+						<label class="input-label"><input class="form-control no-spinners new-offer-buying-curr-1 js-new-offer-buying-curr-1 js-price-input" type="number" min="0" placeholder="0"></label>	
+					</div>
+					<div class="col-auto">
+						<div class="new-offer-amount__currency">
+							<select>
+								<option>BTC</option>
+								<option>ETH</option>
+								<option>XMR</option>
+								<option>BTC</option>
+								<option>ETH</option>
+								<option>USD</option>
+								<option>BTC</option>
+								<option>ETH</option>
+								<option>XMR</option>
+							</select>
+						</div>
+					</div>
+				</div>									
+			</div>
+
+			<div class="new-offer-amount">
+				<div class="row align-items-center">
+					<div class="col-3">
+						<div class="new-offer-amount__title">for a price <span>(per one)</span></div>
+					</div>
+					<div class="col">
+						<label class="input-label"><input class="form-control no-spinners js-price-input" type="number" min="0" type="text" placeholder="0"></label>	
+					</div>
+					<div class="col-auto">
+						<div class="new-offer-amount__currency">
+							<select>
+								<option>BTC</option>
+								<option>ETH</option>
+								<option>XMR</option>
+								<option>BTC</option>
+								<option>ETH</option>
+								<option>USD</option>
+								<option>BTC</option>
+								<option>ETH</option>
+								<option>XMR</option>
+							</select>
+						</div>
+					</div>
+				</div>									
+			</div>
+
+			<div class="new-offer-summary">
+				<div class="new-offer-summary-item new-offer-summary-sum row">
+					<div class="col-3"><b>Sum: </b></div>
+					<div class="col"><span class="new-offer-summary-sum__value">530</span> <span class="new-offer-summary-sum__curr">USD</span></div>
+				</div>
+				<div class="new-offer-summary-item new-offer-summary-fee row">
+					<div class="col-3"><b>Fee: </b></div>
+					<div class="col"><span class="new-offer-summary-fee__value">5.3</span> <span class="new-offer-summary-fee__curr">USD</span></div>
+				</div>
+				<div class="new-offer-summary-item new-offer-summary-total row">
+					<div class="col-3"><b>Total: </b></div>
+					<div class="col"><span class="new-offer-summary-total__value">535.3</span> <span class="new-offer-summary-total__curr">USD</span></div>
+				</div>
+			</div>
+
+			<div class="new-offer-submit">
+				<button class="new-offer-submit-btn btn btn-primary w-100">Create offer</button>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+
+					<div class="new-offer-selling new-offer-form js-new-offer-form js-new-offer-selling">
+	
+	<div class="new-offer-tip">Lowest ask: <div class="new-offer-tip-value js-new-offer-tip-value-selling" data-value="11000"><span>11000</span> USD</div></div>
+
+	<div class="new-offer-box">
+		<div class="new-offer-box__inner">
+
+			<div class="new-offer-amount">
+				<div class="row align-items-center">
+					<div class="col-3">
+						<div class="new-offer-amount__title">Selling</div>
+					</div>
+					<div class="col">
+						<label class="input-label"><input class="form-control no-spinners new-offer-selling-curr-1 js-new-offer-selling-curr-1 js-price-input" type="text" type="number" min="0" placeholder="0"></label>	
+					</div>
+					<div class="col-auto">
+						<div class="new-offer-amount__currency">
+							<select>
+								<option>BTC</option>
+								<option>ETH</option>
+								<option>XMR</option>
+								<option>BTC</option>
+								<option>ETH</option>
+								<option>USD</option>
+								<option>BTC</option>
+								<option>ETH</option>
+								<option>XMR</option>
+							</select>
+						</div>
+					</div>
+				</div>									
+			</div>
+
+			<div class="new-offer-amount">
+				<div class="row align-items-center">
+					<div class="col-3">
+						<div class="new-offer-amount__title">for a price <span>(per one)</span></div>
+					</div>
+					<div class="col">
+						<label class="input-label"><input class="form-control no-spinners js-price-input" type="text" type="number" min="0" placeholder="0"></label>	
+					</div>
+					<div class="col-auto">
+						<div class="new-offer-amount__currency">
+							<select>
+								<option>BTC</option>
+								<option>ETH</option>
+								<option>XMR</option>
+								<option>BTC</option>
+								<option>ETH</option>
+								<option>USD</option>
+								<option>BTC</option>
+								<option>ETH</option>
+								<option>XMR</option>
+							</select>
+						</div>
+					</div>
+				</div>									
+			</div>
+
+			<div class="new-offer-summary">
+				<div class="new-offer-summary-item new-offer-summary-sum row">
+					<div class="col-3"><b>Sum: </b></div>
+					<div class="col"><span class="new-offer-summary-sum__value">530</span> <span class="new-offer-summary-sum__curr">USD</span></div>
+				</div>
+				<div class="new-offer-summary-item new-offer-summary-fee row">
+					<div class="col-3"><b>Fee: </b></div>
+					<div class="col"><span class="new-offer-summary-fee__value">5.3</span> <span class="new-offer-summary-fee__curr">USD</span></div>
+				</div>
+				<div class="new-offer-summary-item new-offer-summary-total row">
+					<div class="col-3"><b>Total: </b></div>
+					<div class="col"><span class="new-offer-summary-total__value">535.3</span> <span class="new-offer-summary-total__curr">USD</span></div>
+				</div>
+			</div>
+
+			<div class="new-offer-submit">
+				<button class="new-offer-submit-btn btn btn-primary w-100">Create offer</button>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+
+				</div>
+				
+			</div>	
+
+
+			<div class="col-12 col-lg-6 home-market-col home-market-col--offers">
+				<div class="offers__inner">
+					
+					<div class="section-title home-market-title offers-title offers-title-buy offers-title--active js-offers-title js-offers-title-buy">Available offers for buyers</div>
+					<div class="section-title home-market-title offers-title offers-title-sell js-offers-title js-offers-title-sell">Available offers for sellers</div>
+
+					<div class="offers-filter">
+						<div class="offers-filter-item offers-filter-item--currency">
+							<div class="offers-filter-title">Pair: </div>
+							<div class="offers-filter-item-control">
+								<select><option>BTC</option><option>ETH</option></select>
+								<b> / </b>
+								<select><option>BTC</option><option>ETH</option></select>
+							</div>
+						</div>
+						<div class="offers-filter-item offers-filter-item--price-view">
+							<div class="offers-filter-title">Price: </div>
+							<div class="offers-filter-item-control">
+								<div class="radios">
+									<label class="radio-text">
+										<input name="offers-buy-price-view" type="radio" checked>
+										<span class="radio-text__text">Per one</span>
+									</label>
+									<label class="radio-text">
+										<input name="offers-buy-price-view" type="radio">
+										<span class="radio-text__text">Per all</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="offers-list offers-list--buy offers-list--active js-offers-list js-offers-list-buy">
+						<div class="table-wrap">
+						<table id="buying-offers" class="dataTable offers-table display" role="grid">
+						    <thead class="offers-table-header">
+						        <tr role="row">
+						            <th class="sorting_asc" tabindex="0" aria-sort="ascending">Volume</th>
+						            <th class="sorting" tabindex="0">Price</th>
+						            <th>Actions</th>
+						        </tr>
+						    </thead>
+						    <tbody>
+								<tr role="row" class="odd">
+    <td class="sorting_1">0.002 BTC</td>
+    <td>11,105 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+<tr role="row" class="odd">
+    <td class="sorting_1">0.1 BTC</td>
+    <td>11,108 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+<tr role="row" class="odd">
+    <td class="sorting_1">158 BTC</td>
+    <td>11,101 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+								<tr role="row" class="odd">
+    <td class="sorting_1">0.002 BTC</td>
+    <td>11,105 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+<tr role="row" class="odd">
+    <td class="sorting_1">0.1 BTC</td>
+    <td>11,108 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+<tr role="row" class="odd">
+    <td class="sorting_1">158 BTC</td>
+    <td>11,101 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+								<tr role="row" class="odd">
+    <td class="sorting_1">0.002 BTC</td>
+    <td>11,105 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+<tr role="row" class="odd">
+    <td class="sorting_1">0.1 BTC</td>
+    <td>11,108 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+<tr role="row" class="odd">
+    <td class="sorting_1">158 BTC</td>
+    <td>11,101 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+								<tr role="row" class="odd">
+    <td class="sorting_1">0.002 BTC</td>
+    <td>11,105 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+<tr role="row" class="odd">
+    <td class="sorting_1">0.1 BTC</td>
+    <td>11,108 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+<tr role="row" class="odd">
+    <td class="sorting_1">158 BTC</td>
+    <td>11,101 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+						    </tbody>
+						</table>
+						</div>
+						<div class="offers-table-refresh">
+							<button class="offers-table-refresh__btn">Refresh offers</button>
+						</div>	
+					</div>
+
+					<div class="offers-list offers-list--sell js-offers-list js-offers-list-sell">
+						<div class="table-wrap">
+						<table id="selling-offers" class="dataTable offers-table display" role="grid">
+						    <thead class="offers-table-header">
+						        <tr role="row">
+						            <th class="sorting_asc" tabindex="0" aria-sort="ascending">Volume</th>
+						            <th class="sorting" tabindex="0">Price</th>
+						            <th>Actions</th>
+						        </tr>
+						    </thead>
+						    <tbody>
+								<tr role="row" class="odd">
+    <td class="sorting_1">0.002 BTC</td>
+    <td>11,105 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+<tr role="row" class="odd">
+    <td class="sorting_1">0.1 BTC</td>
+    <td>11,108 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+<tr role="row" class="odd">
+    <td class="sorting_1">158 BTC</td>
+    <td>11,101 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+								<tr role="row" class="odd">
+    <td class="sorting_1">0.002 BTC</td>
+    <td>11,105 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+<tr role="row" class="odd">
+    <td class="sorting_1">0.1 BTC</td>
+    <td>11,108 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+<tr role="row" class="odd">
+    <td class="sorting_1">158 BTC</td>
+    <td>11,101 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+								<tr role="row" class="odd">
+    <td class="sorting_1">0.002 BTC</td>
+    <td>11,105 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+<tr role="row" class="odd">
+    <td class="sorting_1">0.1 BTC</td>
+    <td>11,108 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+<tr role="row" class="odd">
+    <td class="sorting_1">158 BTC</td>
+    <td>11,101 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+								<tr role="row" class="odd">
+    <td class="sorting_1">0.002 BTC</td>
+    <td>11,105 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+<tr role="row" class="odd">
+    <td class="sorting_1">0.1 BTC</td>
+    <td>11,108 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+<tr role="row" class="odd">
+    <td class="sorting_1">158 BTC</td>
+    <td>11,101 USD</td>
+    <td>
+		<div class="offers-table-actions">
+			<a href="offer-single.html" class="offers-table-action offers-table-action-buy" data-toggle="modal" data-target="#offerModal" title="Accept offer">Accept offer</a>
+			<a href="profile.html" class="offers-table-action offers-table-action-profile" title="User's profile">User's profile</a>
+		</div>
+    </td>
+</tr>
+						    </tbody>
+						</table>
+						</div>
+						<div class="offers-table-refresh">
+							<button class="offers-table-refresh__btn">Refresh offers</button>
+						</div>	
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		
+		<div class="divider divider--m"></div>
+
+	</div>
+</section>
+
+
+
+<section class="section home-history">
+	
+	<div class="home-history-top">
+		<div class="cont">
+			<div class="row">
+				<div class="col-12 col-lg-6"><h2 class="title-2">Trade History</h2></div>
+				<div class="col-12 col-lg-6"><h2 class="title-2">My History</h2></div>
+			</div>
+		</div>
+	</div>	
+
+	<div class="home-history-tables">
+		<div class="cont">
+			<div class="row">
+
+				<div class="col-12 col-lg-6 home-history-col">
+					<div class="home-history-col-inner">
+
+						<div class="home-history-col-title"><h2 class="title-2">Trade History</h2></div>
+
+						<div class="table-wrap">
+						<table id="trade-history" class="dataTable trade-history-table display nowrap" role="grid">
+						    <thead class="trade-history-table-header">
+						        <tr role="row">
+						            <th class="sorting" tabindex="0">Type</th>
+						            <th class="sorting_asc" tabindex="0">When</thh>
+						            <th class="sorting" tabindex="0">Price</thh>
+						            <th class="sorting" tabindex="0">Volume</thh>
+						        </tr>
+						    </thead>
+						    <tbody>
+						        <tr role="row" class="odd">
+						            <td>SELL</td>
+						            <td>Jan 23, 2018, 13:29</td>
+						            <td>1200 USD</td>
+						            <td>0.2 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>BUY</td>
+						            <td>Jan 23, 2018, 12:29</td>
+						            <td>1100 USD</td>
+						            <td>0.24 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>SELL</td>
+						            <td>Jan 23, 2018, 13:29</td>
+						            <td>1200 USD</td>
+						            <td>0.2 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>BUY</td>
+						            <td>Jan 23, 2018, 12:29</td>
+						            <td>1100 USD</td>
+						            <td>0.24 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>SELL</td>
+						            <td>Jan 23, 2018, 13:29</td>
+						            <td>1200 USD</td>
+						            <td>0.2 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>BUY</td>
+						            <td>Jan 23, 2018, 12:29</td>
+						            <td>1100 USD</td>
+						            <td>0.24 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>SELL</td>
+						            <td>Jan 23, 2018, 13:29</td>
+						            <td>1200 USD</td>
+						            <td>0.2 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>BUY</td>
+						            <td>Jan 23, 2018, 12:29</td>
+						            <td>1100 USD</td>
+						            <td>0.24 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>SELL</td>
+						            <td>Jan 23, 2018, 13:29</td>
+						            <td>1200 USD</td>
+						            <td>0.2 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>BUY</td>
+						            <td>Jan 23, 2018, 12:29</td>
+						            <td>1100 USD</td>
+						            <td>0.24 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>SELL</td>
+						            <td>Jan 23, 2018, 13:29</td>
+						            <td>1200 USD</td>
+						            <td>0.2 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>BUY</td>
+						            <td>Jan 23, 2018, 12:29</td>
+						            <td>1100 USD</td>
+						            <td>0.24 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>SELL</td>
+						            <td>Jan 23, 2018, 13:29</td>
+						            <td>1200 USD</td>
+						            <td>0.2 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>BUY</td>
+						            <td>Jan 23, 2018, 12:29</td>
+						            <td>1100 USD</td>
+						            <td>0.24 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>SELL</td>
+						            <td>Jan 23, 2018, 13:29</td>
+						            <td>1200 USD</td>
+						            <td>0.2 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>BUY</td>
+						            <td>Jan 23, 2018, 12:29</td>
+						            <td>1100 USD</td>
+						            <td>0.24 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>SELL</td>
+						            <td>Jan 23, 2018, 13:29</td>
+						            <td>1200 USD</td>
+						            <td>0.2 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>BUY</td>
+						            <td>Jan 23, 2018, 12:29</td>
+						            <td>1100 USD</td>
+						            <td>0.24 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>SELL</td>
+						            <td>Jan 23, 2018, 13:29</td>
+						            <td>1200 USD</td>
+						            <td>0.2 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>BUY</td>
+						            <td>Jan 23, 2018, 12:29</td>
+						            <td>1100 USD</td>
+						            <td>0.24 BTC</td>
+						        </tr>
+						    </tbody>
+						</table>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-12 col-lg-6 home-history-col">
+					<div class="home-history-col-inner">
+
+						<div class="home-history-col-title"><h2 class="title-2">My History</h2></div>
+
+						<div class="table-wrap">
+						<table id="trade-history" class="dataTable trade-history-table display nowrap" role="grid">
+						    <thead class="trade-history-table-header">
+						        <tr role="row">
+						            <th class="sorting" tabindex="0">Type</th>
+						            <th class="sorting_asc" tabindex="0">When</thh>
+						            <th class="sorting" tabindex="0">Price</thh>
+						            <th class="sorting" tabindex="0">Volume</thh>
+						        </tr>
+						    </thead>
+						    <tbody>
+						        <tr role="row" class="odd">
+						            <td>SELL</td>
+						            <td>Jan 23, 2018, 13:29</td>
+						            <td>1200 USD</td>
+						            <td>0.2 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>BUY</td>
+						            <td>Jan 23, 2018, 12:29</td>
+						            <td>1100 USD</td>
+						            <td>0.24 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>SELL</td>
+						            <td>Jan 23, 2018, 13:29</td>
+						            <td>1200 USD</td>
+						            <td>0.2 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>BUY</td>
+						            <td>Jan 23, 2018, 12:29</td>
+						            <td>1100 USD</td>
+						            <td>0.24 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>SELL</td>
+						            <td>Jan 23, 2018, 13:29</td>
+						            <td>1200 USD</td>
+						            <td>0.2 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>BUY</td>
+						            <td>Jan 23, 2018, 12:29</td>
+						            <td>1100 USD</td>
+						            <td>0.24 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>SELL</td>
+						            <td>Jan 23, 2018, 13:29</td>
+						            <td>1200 USD</td>
+						            <td>0.2 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>BUY</td>
+						            <td>Jan 23, 2018, 12:29</td>
+						            <td>1100 USD</td>
+						            <td>0.24 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>BUY</td>
+						            <td>Jan 23, 2018, 12:29</td>
+						            <td>1100 USD</td>
+						            <td>0.24 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>SELL</td>
+						            <td>Jan 23, 2018, 13:29</td>
+						            <td>1200 USD</td>
+						            <td>0.2 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>BUY</td>
+						            <td>Jan 23, 2018, 12:29</td>
+						            <td>1100 USD</td>
+						            <td>0.24 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>SELL</td>
+						            <td>Jan 23, 2018, 13:29</td>
+						            <td>1200 USD</td>
+						            <td>0.2 BTC</td>
+						        </tr>
+						        <tr role="row" class="odd">
+						            <td>BUY</td>
+						            <td>Jan 23, 2018, 12:29</td>
+						            <td>1100 USD</td>
+						            <td>0.24 BTC</td>
+						        </tr>
+						    </tbody>
+						</table>
+						</div>
+						
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+</section>
+
+
+
+<section class="section home-faq">
+	<div class="cont">
+
+		<h2 class="section-title">FAQ</h2>
+
+		<div class="faq-items">
+			
+			<a class="faq-item js-faq-item faq-item--expanded" href="/faq.html#faq-question-id">
+				<div class="faq-item__title">How long do I have to wait until I get my money?</div>
+				<div class="faq-item__content">
+					<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+					<p>Br avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+				</div>
+			</a>
+			
+			<a class="faq-item js-faq-item" href="/faq.html#faq-question-id">
+				<div class="faq-item__title">Do I have to deposit BTC?</div>
+				<div class="faq-item__content">
+					<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+					<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+					<p>Br avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+				</div>
+			</a>
+			
+			<a class="faq-item js-faq-item" href="/faq.html#faq-question-id">
+				<div class="faq-item__title">What payment methods are available?</div>
+				<div class="faq-item__content">
+					<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+					<p>Br avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+					<p>Br avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+				</div>
+			</a>
+			
+			<a class="faq-item js-faq-item" href="/faq.html#faq-question-id">
+				<div class="faq-item__title">How long do I have to wait until I get my money?</div>
+				<div class="faq-item__content">
+					<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+					<p>Br avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+				</div>
+			</a>
+
+		</div>
+
+		<div class="home-faq-actions">
+			<a href="#" class="btn btn-primary">All questions</a>
+			<a href="#" class="btn btn-outline-primary">Contact support</a>
+		</div>
+
+	</div>
+</section>
+
+
+<footer class="footer">
+	<div class="cont">
+
+		<div class="row">
+			<div class="col-12 col-sm footer-col footer-col--logo">
+				<div class="footer-logo"><img src="assets/img/logo-black.svg" alt=""></div>
+			</div>
+			<div class="col-12 col-sm footer-col footer-col--copy">
+				<span class="copyright">www.cryptomarket.com © 2018</span>
+			</div>
+		</div>
+
+		<div class="footer-small">
+			<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ipsum praesentium odio tempora quae quam hic fugiat, blanditiis maxime mollitia suscipit iure debitis. Corporis, veritatis, quidem sint dolor neque officiis.</small>
+		</div>
+
+	</div>
+</footer>
+
+
+<!-- A deal with a status of "Waiting for the seller's approval" -->
+<div class="modal deal-modal deal-modal--waiting-for-the-seller fade" id="deal1Modal" tabindex="-1" role="dialog" aria-labelledby="deal1ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+
+        <div class="deal-single">
+        	<div class="deal-single-inner">
+
+        		<div class="deal-single-header">
+        			<div class="deal-single-sum">
+    						<span>Offer: </span>
+    						<span class="deal-single-sum__number">0.02</span><span class="deal-single-sum__currency">BTC</span>
+    						<span class="deal-single-sum__for">to</span>
+    						<span class="deal-single-sum__number">150</span><span class="deal-single-sum__currency">USD</span>
+    					</div>
+        		</div>
+
+        		<div class="deal-single-date">
+        			<b>Offer created on:</b>
+        			<div class="deal-single-date__date">Jan 23, 2018, 13:29</div>
+        		</div>
+
+            <div class="deal-single-seller">
+              <b>Seller: </b> 
+              <div class="deal-single-seller__nickname"><a class="" href="profile.html">weaboo</a></div>
+            </div>
+
+        		<div class="divider divider--m"></div>
+
+            <div class="deal-single-status deal-single-status--waiting-for-seller">
+              <div class="deal-single-status__title">Status:</div>
+              <div class="deal-single-status__value">Waiting for the seller's approval</div>
+            </div>
+        		
+    				<div class="deal-single-actions">
+    					<button class="btn btn-outline-danger">Cancel deal</button>
+    				</div>
+
+            <div class="deal-single-message">
+              <p>The process of approval may take some time. If the seller doesn't approve the deal in 2 days, it will be cancelled and we will return your money.</p>
+            </div>
+
+        	</div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- A deal with a status of "Pending payment" -->
+<div class="modal deal-modal deal-modal--waiting-for-the-seller fade" id="deal2Modal" tabindex="-1" role="dialog" aria-labelledby="deal2ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+
+        <div class="deal-single">
+        	<div class="deal-single-inner">
+
+        		<div class="deal-single-header">
+        			<div class="deal-single-sum">
+    						<span>Offer: </span>
+    						<span class="deal-single-sum__number">0.02</span><span class="deal-single-sum__currency">BTC</span>
+    						<span class="deal-single-sum__for">to</span>
+    						<span class="deal-single-sum__number">150</span><span class="deal-single-sum__currency">USD</span>
+    					</div>
+        		</div>
+
+        		<div class="deal-single-date">
+        			<b>Offer created on:</b>
+        			<div class="deal-single-date__date">Jan 23, 2018, 13:29</div>
+        		</div>
+
+            <div class="deal-single-seller">
+              <b>Seller: </b> 
+              <div class="deal-single-seller__nickname"><a class="" href="profile.html">weaboo</a></div>
+            </div>
+
+            <div class="deal-single-status deal-single-status--waiting-for-seller">
+              <div class="deal-single-status__title">Status:</div>
+              <div class="deal-single-status__value">Pending payment</div>
+            </div>
+        		
+    				<div class="deal-single-actions">
+    					<button class="btn btn-outline-danger">Cancel deal</button>
+    				</div>
+
+            <div class="deal-single-instructions">
+              <div class="deal-single-instructions__title">What should I do?</div>
+              <p>Transfer 150 USD to this wallet:</p>
+              <div class="wallet-number wallet-number--bg wallet-number--lg">1MJYnf3oRpYUMjuVqNiYrcUwBRbD84Rtye</div>
+            </div>
+
+            <div class="deal-single-message">
+              <p>If you don't transfer funds in 2 days, the deal will be cancelled automatically.</p>
+            </div>
+
+        	</div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Passwrod reset modal for those who have js enables -->
+<div class="modal deal-modal deal-modal--not-taken fade" id="offerModal" tabindex="-1" role="dialog" aria-labelledby="offerModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+
+        <div class="deal-single">
+        	<div class="deal-single-inner">
+
+        		<div class="deal-single-header">
+        			<div class="deal-single-sum">
+    						<span>You are buying</span>
+    						<span class="deal-single-sum__number">0.02</span><span class="deal-single-sum__currency">BTC</span>
+    						<span class="deal-single-sum__for">for</span>
+    						<span class="deal-single-sum__number">150</span><span class="deal-single-sum__currency">USD</span>
+    					</div>
+        		</div>
+
+        		<div class="deal-single-date">
+        			<b>Offer created on:</b>
+        			<div class="deal-single-date__date">Jan 23, 2018, 13:29</div>
+        		</div>
+
+        		<div class="divider divider--m"></div>
+
+        		<div class="deal-single-seller">
+        			<b>Seller: </b> 
+        			<div class="deal-single-seller__nickname"><a class="" href="profile.html">weaboo</a></div>
+        		</div>
+        		
+				<div class="deal-single-actions">
+					<button class="btn btn-primary">Accept offer</button>
+				</div>
+
+        	</div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Login modal for those who have js enables -->
+<div class="modal fade " id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+
+        <div class="login-form">
+  
+  <h2 class="login-form__title">Log In</h2>
+
+  <form class="login-form__form">
+
+    <div class="input-group">
+      <label class="input-label mb-3">
+        <div class="input-title">Email</div>
+        <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email">
+      </label>
+      <label class="input-label mb-3">
+        <div class="input-title">Password</div>
+        <input type="password" class="form-control" placeholder="Enter your password" aria-label="Email">
+      </label>
+    </div>
+
+    <div class="login-form-submit mt-2">
+      <input type="submit" class="btn btn-primary w-100" value="Log In">
+    </div>
+
+  </form>
+
+  <div class="text-center mt-4">
+    Not a member? <a href="register.html" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">Sign Up</a>
+  </div>
+
+  <div class="login-form__forgot text-center">
+    <a href="reset-pass.html" data-dismiss="modal" data-toggle="modal" data-target="#forgotPassModal">I forgot my password</a>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Register modal for those who have js enables -->
+<div class="modal fade " id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+
+        <div class="login-form">
+  
+  <h2 class="login-form__title">Register</h2>
+
+  <form class="login-form__form">
+
+    <div class="input-group">
+      <label class="input-label mb-3">
+        <div class="input-title">Email</div>
+        <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email">
+      </label>
+      <label class="input-label mb-3">
+        <div class="input-title">Password</div>
+        <input type="password" class="form-control" placeholder="Enter your password" aria-label="Password">
+      </label>
+      <label class="input-label mb-3">
+        <div class="input-title">Repeat password</div>
+        <input type="password" class="form-control" placeholder="Repeat your password" aria-label="Password">
+      </label>
+    </div>
+
+    <div class="login-form-submit mt-2">
+      <input type="submit" class="btn btn-primary w-100" value="Register">
+    </div>
+
+  </form>
+
+  <div class="text-center mt-4">
+    Already a member? <a href="login.html" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">Log In</a>
+  </div>
+
+  <div class="login-form__forgot text-center">
+    <a href="reset-pass.html" data-dismiss="modal" data-toggle="modal" data-target="#forgotPassModal">I forgot my password</a>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Passwrod reset modal for those who have js enables -->
+<div class="modal fade" id="forgotPassModal" tabindex="-1" role="dialog" aria-labelledby="forgotPassModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+
+        <div class="login-form">
+  
+  <h2 class="login-form__title">Reset password</h2>
+
+  <form class="login-form__form">
+
+    <div class="input-group">
+      <label class="input-label mb-2">
+        <div class="input-title">Email</div>
+        <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email">
+      </label>
+    </div>
+
+    <div class="login-form-submit">
+      <input type="submit" class="btn btn-primary w-100" value="Reset password">
+    </div>
+
+  </form>
+
+  <div class="text-center mt-4">
+    <a href="login.html" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">Log In</a>
+    <b> / </b>
+    <a href="register.html" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">Register</a>
+  </div>
+
+</div>
+  
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js?v=3.1"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+<script>
+ WebFont.load({
+    google: {
+      families: [
+      'Roboto:300,400,400i,500,700,700i,900:cyrillic', 
+      'Roboto Condensed:300,400,700:cyrillic', 
+      'Roboto Mono:400,500,700'
+      ]
+    }
+  });
+</script>
+
+
+
+<script type="text/javascript" src="plugins/datatables/datatables.min.js" defer></script>
+<!-- <script type="text/javascript" src="plugins/datatables/dataTables.scroller.min.js" defer></script> -->
+
+<script src="plugins/TweenMax.min.js"></script>
+
+<script>
+
+	var radius = 8;
+	TweenMax.staggerFromTo('.blob', 30 ,{
+		cycle: {
+			attr:function(i) {
+				var r = i*90;
+				return {
+					transform:'rotate('+r+') translate('+radius+',0.1) rotate('+(-r)+')'
+				}      
+			}
+		}  
+	},{
+		cycle: {
+			attr:function(i) {
+				var r = i*90+360;
+				return {
+					transform:'rotate('+r+') translate('+radius+',0.1) rotate('+(-r)+')'
+				}      
+			}
+		},
+		ease:Linear.easeNone,
+		repeat:-1
+	});
+
+</script>
+
+</body>
+</html>

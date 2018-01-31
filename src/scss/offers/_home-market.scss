@@ -1,0 +1,32 @@
+.home-market-col {
+	margin-bottom: 45px;
+}
+
+
+.home-market-title {
+
+	.radios {
+		display: inline-block;
+		color: rgba($black, .5);
+	}
+
+}
+
+
+
+@media screen and (max-width: 991px) {
+
+	.home-market {
+
+		> .cont {
+			max-width: 640px;
+		}
+	}
+
+	.home-market-title {
+		font-size: 2.2em;
+	}
+
+}
+
+

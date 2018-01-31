@@ -1,0 +1,141 @@
+.new-offer-choose {
+
+	select {
+		font-weight: bold;
+		color: $prim;
+		border: none;
+		background: transparent;
+
+		display: inline-block;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	option {
+		font-weight: bold;
+	}
+
+}
+
+
+.new-offer-form {
+	display: none;
+
+	&--active {
+		display: block;
+	}
+}
+
+.new-offer-tip {
+	margin-bottom: 30px;
+}
+
+.new-offer-tip-value {
+	color: $prim;
+	border-bottom: 1px dotted $prim;
+
+	display: inline-block;
+	margin-left: 15px;
+
+	cursor: pointer;
+}
+
+.new-offer-box {
+	background-color: #fff;
+	border-radius: 4px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.new-offer-amount {
+	padding: 15px 30px;
+
+	&__title {
+		font-weight: bold;
+		line-height: 1.2;
+
+		span {
+			font-size: 14px;
+			font-weight: normal;
+			opacity: .6;
+		}
+	}
+
+	&__currency {
+		font-weight: bold;
+
+		select {
+			font-weight: bold;
+			border: none;
+			background: transparent;
+		}
+
+		option {
+			font-weight: bold;
+		}
+	}
+
+}
+
+.new-offer-summary {
+	padding: 15px 30px;
+	margin-top: 30px;
+}
+
+.new-offer-summary-sum,
+.new-offer-summary-fee {
+	opacity: .7;
+}
+
+.new-offer-summary-total {
+	font-size: 1.6em;
+
+	margin-top: 10px;
+
+	&__value {
+		
+	}
+}
+
+.new-offer-submit {
+	padding: 15px 30px;
+	margin-top: 15px;
+}
+
+.new-offer-submit-btn {
+	font-size: 16px;
+	padding: 12px;
+}
+
+
+
+@media screen and (max-width: 360px) {
+
+	.new-offer-box {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.new-offer-amount {
+		padding: 15px;
+	}
+
+	.new-offer-summary {
+		padding: 15px;
+	}
+
+	.new-offer-submit {
+		padding: 15px;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+
+	.new-offer-tip {
+		height: 35px;
+	}
+
+}

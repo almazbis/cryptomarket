@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('./partials/head.html')
+</head>
+<body>
+
+@@include('./components/_rates.html')
+
+
+@@include('./partials/header-logged-in.html')
+
+<div class="page-inner">
+<div class="profile">
+	<div class="cont">
+
+		<div class="row">
+			
+			<div class="col-12 col-xl-3 profile-col profile-col--details">
+				<div class="profile-details">
+					<div class="profile-details-inner">
+						<div class="profile-pic"><img src="img/profile-pic.png" alt="memegod"></div>
+						<div class="profile-details__rest">
+							<div class="profile-nickname">memegod</div>
+							<div class="profile-since">
+								<p>Joined 228 days ago</p>
+								<p>Last seen: <span class="nowrap">Jan 23, 2018, 13:29</span></p>
+							</div>
+							<div class="profile-status">
+								<textarea class="form-control mb-2">I'm selling 0.5 BTC for $1k please contact me</textarea>
+								<button href="#" class="btn btn-sm btn-outline-secondary btn-save">Update status</abutton>
+							</div>
+<!-- 							<div class="profile-actions">
+								<a href="#" class="btn btn-sm btn-outline-secondary btn-edit">Edit profile</a>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-5 col-lg-4 col-xl-3 profile-col profile-col--deals">
+				<h3 class="title-2 mb-4">Active deals</h3>
+
+				<div class="deals-list">
+					<a class="deal deal--waiting-for-seller" href="deal-single.html" data-toggle="modal" data-target="#deal1Modal">
+						<div class="deal-sum">
+							<span class="deal-sum__number">0.02</span><span class="deal-sum__currency">BTC</span>
+							<b>to</b>
+							<span class="deal-sum__number">150</span><span class="deal-sum__currency">USD</span>
+						</div>
+						<div class="deal-status"><b>Status:</b> <span class="deal-status__value">waiting for the seller's approval</span></div>
+					</a>
+					<a class="deal deal--pending-payment" href="deal-single.html" data-toggle="modal" data-target="#deal2Modal">
+						<div class="deal-sum">
+							<span class="deal-sum__number">0.02</span><span class="deal-sum__currency">BTC</span>
+							<b>to</b>
+							<span class="deal-sum__number">150</span><span class="deal-sum__currency">USD</span>
+						</div>
+						<div class="deal-status"><b>Status:</b> <span class="deal-status__value">pending payment</span></div>
+					</a>
+					<a class="deal deal--pending-mods" href="deal-single.html" data-toggle="modal" data-target="#deal3Modal">
+						<div class="deal-sum">
+							<span class="deal-sum__number">0.02</span><span class="deal-sum__currency">BTC</span>
+							<b>to</b>
+							<span class="deal-sum__number">150</span><span class="deal-sum__currency">USD</span>
+						</div>
+						<div class="deal-status"><b>Status:</b> <span class="deal-status__value">processing</span></div>
+					</a>
+					<a class="deal deal--error" href="deal-single.html" data-toggle="modal" data-target="#deal4Modal">
+						<div class="deal-sum">
+							<span class="deal-sum__number">0.02</span><span class="deal-sum__currency">BTC</span>
+							<b>to</b>
+							<span class="deal-sum__number">150</span><span class="deal-sum__currency">USD</span>
+						</div>
+						<div class="deal-status"><b>Status:</b> <span class="deal-status__value">error</span></div>
+					</a>
+				</div>
+
+			</div>
+
+			<div class="col-12 col-md profile-col profile-col--history">
+
+				@@include('./includes/_profile-history.html')
+
+			</div>
+
+		</div>
+	</div>	
+</div>	
+</div>
+
+
+
+
+
+
+@@include('./partials/footer.html')
+
+
+@@include('./includes/_modal-deal-waiting.html')
+
+@@include('./includes/_modal-deal-pending-payment.html')
+
+@@include('./includes/_modal-offer.html')
+
+@@include('./includes/_modal-login.html')
+
+@@include('./includes/_modal-register.html')
+
+@@include('./includes/_modal-forgot-pass.html')
+
+
+@@include('./partials/footer-scripts.html')
+
+</body>
+</html>

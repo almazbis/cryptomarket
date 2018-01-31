@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('./partials/head.html')
+</head>
+<body>
+
+@@include('./components/_rates.html')
+
+
+@@include('./partials/header-logged-in.html')
+
+<div class="page-inner">
+<div class="profile-edit">
+	<div class="cont">
+	
+		<div class="login-form">
+		  
+		  <h2 class="login-form__title">Profile settings</h2>
+
+		  <form class="login-form__form">
+
+		    <div class="input-group">
+
+				<label class="input-label mb-2">
+					<div class="input-title">Email</div>
+					<input type="email" class="form-control" value="memegod@gmail.com" aria-label="Email">
+				</label>
+				<div class="login-form-submit mb-5">
+					<input type="submit" class="btn btn-primary w-100" value="Update email">
+				</div>
+
+				<label class="input-label mb-3">
+					<div class="input-title">New password</div>
+					<input type="password" class="form-control" placeholder="New password" aria-label="Email">
+				</label>
+				<label class="input-label mb-3">
+					<div class="input-title">Confirm new password</div>
+					<input type="password" class="form-control" placeholder="Confirm new password" aria-label="Email">
+				</label>
+				<div class="login-form-submit mb-5">
+					<input type="submit" class="btn btn-primary w-100" value="Update password">
+				</div>
+
+				<label class="input-label mb-3">
+					<div class="input-title">Status</div>
+					<textarea class="form-control">I'm selling 0.5 BTC for $1k please contact me</textarea>
+				</label>
+				<div class="login-form-submit mb-5">
+					<input type="submit" class="btn btn-primary w-100" value="Update status">
+				</div>
+
+		    </div>
+
+
+
+		  </form>
+
+		</div>
+
+	</div>	
+</div>	
+</div>
+
+
+
+
+
+
+@@include('./partials/footer.html')
+
+
+@@include('./includes/_modal-deal-waiting.html')
+
+@@include('./includes/_modal-deal-pending-payment.html')
+
+@@include('./includes/_modal-offer.html')
+
+@@include('./includes/_modal-login.html')
+
+@@include('./includes/_modal-register.html')
+
+@@include('./includes/_modal-forgot-pass.html')
+
+
+@@include('./partials/footer-scripts.html')
+
+</body>
+</html>

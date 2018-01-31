@@ -1,0 +1,140 @@
+.deal-single-inner {
+	max-width: 640px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.deal-single-header {
+	font-size: 1.3em;
+	margin-bottom: 15px;
+}
+
+.deal-single-sum {
+	display: inline-block;
+
+	&__for {
+		font-size: .8em;
+		opacity: .7;
+
+		display: inline-block;
+		margin-left: 3px;
+		margin-right: 3px;
+	}
+
+	&__number {
+		font-weight: 600;
+	}
+
+	&__currency {
+		display: inline-block;
+		margin-left: 3px;
+	}
+
+}
+
+.deal-single-date {
+	opacity: .5;
+
+	margin-bottom: 15px;
+
+	&__date {
+		display: inline-block;
+	}
+}
+
+.deal-single-seller {
+	margin-bottom: 30px;
+
+	&__nickname {
+		display: inline-block;
+	}
+}
+
+.deal-single-actions {
+	padding-top: 30px;
+}
+
+.deal-single-status {
+
+	&__title {
+		font-size: 1.3em;
+		font-weight: bold;
+	}
+
+	&--waiting-for-seller {
+
+		.deal-single-status__value {
+			color: $black;
+		}
+	}
+
+	&--pending-payment {
+
+		.deal-single-status__value {
+			color: $prim;
+		}
+	}
+
+	&--error {
+
+		.deal-single-status__value {
+			color: $red;
+		}
+	}
+
+	&--pending-mods {
+
+		.deal-single-status__value {
+			color: $green;
+		}
+	}
+}
+
+
+.deal-single-message {
+	// background-color: rgba(desaturate($prim, 70%), .1);
+	border: 2px solid rgba(desaturate($prim, 70%), .2);
+	border-radius: 4px;
+
+	padding: 15px;
+	margin-top: 45px;
+
+	p {
+		margin: 0;
+
+		+ p {
+			margin-top: 15px;
+		}
+	}
+}
+
+
+.deal-single-instructions {
+	// border-top: 1px solid rgba(desaturate($prim, 70%), .1);
+	// border-bottom: 1px solid rgba(desaturate($prim, 70%), .1);
+	background-color: rgba(desaturate($prim, 70%), .07);
+	border-radius: 4px;
+
+	margin-top: 60px;
+	margin-bottom: 30px;
+	padding: 20px;
+
+	&__title {
+		font-size: 1.3em;
+		font-weight: bold;
+
+		margin-bottom: 30px;
+	}
+
+}
+
+
+@media screen and (min-width: 576px) {
+
+	.deal-single-header {
+		font-size: 2em;
+	}
+
+}

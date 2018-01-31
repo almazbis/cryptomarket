@@ -1,0 +1,84 @@
+.psst-inner {
+	position: relative;
+}
+
+.psst-close {
+	position: absolute;
+	z-index: 2;
+	top: 5px;
+	right: 5px;
+}
+
+.psst-show {
+	color: #fff;
+	background: rgba($black, .5);
+	border: none;
+	border-radius: 3px;
+
+	margin-left: 15px;
+
+	cursor: pointer;
+}
+
+.psst-content {
+
+	p {
+		margin: 0;
+
+		+ p {
+			margin-top: 15px;
+		}
+	}
+}
+
+.psst-dismissed-text {
+	font-size: 14px;
+	opacity: .5;
+
+	display: none;
+
+	transition: $transition;
+
+	p {
+		display: inline-block;
+		margin: 0;
+	}
+}
+
+
+
+.psst {
+	background: #fff;
+	border-bottom: 2px solid rgba(desaturate($prim, 70%), .1);
+
+	position: relative;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	&--dismissed {
+		padding-top: 5px;
+		padding-bottom: 5px;
+
+		.psst-content {
+			display: none;
+		}
+
+		.psst-close {
+			display: none;
+		}
+
+		.psst-dismissed-text {
+			display: block;
+		}
+
+		&:hover {
+			.psst-dismissed-text {
+				opacity: 1;
+			}
+		}
+
+
+	}
+}
+
+

@@ -1,0 +1,212 @@
+.offers-title {
+	display: none;
+
+	&--active {
+		display: block;
+	}
+}
+
+.offers-list {
+	display: none;
+
+	&--active {
+		display: block;
+	}
+}
+
+
+
+// ### FILTER ###
+
+.offers-filter {
+	margin-bottom: 30px;
+
+	select {
+		border: none;
+		background: transparent;
+		margin-right: 3px;
+		margin-left: 3px;
+	}
+
+	option {
+		font-weight: bold;
+	}
+
+}
+
+
+.offers-filter-item {
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 15px;
+}
+
+.offers-filter-title {
+	font-weight: bold;
+
+	display: inline-block;
+	margin-right: 5px;
+}
+
+
+.offers-filter-item-control {
+	display: inline-block;
+}
+
+
+// ### TABLES ###
+
+.offers-table {
+	width: 100%;
+	overflow: auto;
+	margin-bottom: 15px;
+
+	background: rgba(desaturate($prim, 60%), .03);
+
+	td, th {
+		font-size: 14px;
+		padding: 10px 18px;
+		vertical-align: middle;
+	}
+}
+
+.offers-table-header {
+
+	th {
+		border: none !important;
+		background: rgba($black, .05);
+	}
+}
+
+
+.offers-table-actions {
+	opacity: .4;
+
+	transition: $transition;
+
+	tr:hover & {
+		opacity: 1;
+	}
+}
+
+.offers-table-action {
+	font-size: 0;
+	line-height: 0;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: transparent;
+	border: none;
+	// border-radius: 50%;
+	opacity: .5;
+
+	width: 18px;
+	height: 18px;
+	margin: 0;
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+
+	transition: $transition-faster;
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		outline: none;
+		opacity: 1;
+		// background-color: rgba($prim, .15);
+	}
+
+	&:active {
+		opacity: 1;
+		// background-color: rgba(darken($prim, 5%), .25);
+	}
+
+}
+
+.offers-table-action-buy {
+	background-image: url(../assets/icons/offer-buy-icon.svg);
+}
+
+.offers-table-action-profile {
+	background-image: url(../assets/icons/offer-profile-icon.svg);
+}
+
+
+
+.offers-table-refresh {
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+	&__btn {
+		color: $prim;
+		font-size: 14px;
+		background: rgba($prim, .07) url(../assets/icons/refresh.svg) no-repeat center 15px;
+		background-size: 1.5em;
+		border: none;
+		border-radius: 3px;
+
+		padding: 10px 30px;
+		padding-top: 3em;
+
+		cursor: pointer;
+		transition: $transition-faster;
+
+		&:hover, &:focus {
+			background-color: rgba($prim, .15);
+			outline: none;
+		}
+
+		&:active {
+			background-color: rgba(darken($prim, 5%), .25);
+		}
+
+	}
+}
+
+
+table.offers-table tbody th, 
+table.offers-table tbody td {
+	font-size: 14px;
+	padding: 10px 18px;
+}
+
+table.offers-table tbody tr {
+	background: transparent;
+}
+
+table.offers-table.no-footer {
+	border: none;
+}
+
+
+table.offers-table.display tbody tr:hover>.sorting_1, 
+table.offers-table.order-column.hover tbody tr:hover>.sorting_1,
+table.offers-table.display tbody tr.odd>.sorting_1, 
+table.offers-table.order-column.stripe tbody tr.odd>.sorting_1,
+table.offers-table.stripe tbody tr.odd, 
+table.offers-table.display tbody tr.odd,
+table.offers-table.hover tbody tr:hover, 
+table.offers-table.display tbody tr:hover,
+table.offers-table.display tbody tr.even>.sorting_1, 
+table.offers-table.order-column.stripe tbody tr.even>.sorting_1 {
+	background: transparent;
+	border: none;
+}
+
+table.offers-table.row-border tbody th, 
+table.offers-table.row-border tbody td, 
+table.offers-table.display tbody th, 
+table.offers-table.display tbody td {
+	border: none;
+}
+
+
+@media screen and (min-width: 768px) {
+
+	.offers-filter {
+		height: 46px;
+	}
+
+}

@@ -1,0 +1,118 @@
+<section class="section home-market">
+	<div class="cont">
+
+		<div class="row">
+
+			<div class="col-12 col-lg-6 home-market-col home-market-col--new-offer">
+				<div class="new-offer">
+					
+					<div class="section-title new-offer-choose home-market-title">
+						I want to
+						<form id="switch-offer-type" class="radios">
+							<label class="radio-text">
+								<input name="new-offer-type" type="radio" value="buy" checked>
+								<span class="radio-text__text">buy</span>
+							</label>
+							<label class="radio-text">
+								<input name="new-offer-type" type="radio" value="sell">
+								<span class="radio-text__text">sell</span>
+							</label>
+						</form>
+					</div>
+
+					@@include('./_new-offer-buy.html')
+
+					@@include('./_new-offer-sell.html')
+
+				</div>
+				
+			</div>	
+
+
+			<div class="col-12 col-lg-6 home-market-col home-market-col--offers">
+				<div class="offers__inner">
+					
+					<div class="section-title home-market-title offers-title offers-title-buy offers-title--active js-offers-title js-offers-title-buy">Available offers for buyers</div>
+					<div class="section-title home-market-title offers-title offers-title-sell js-offers-title js-offers-title-sell">Available offers for sellers</div>
+
+					<div class="offers-filter">
+						<div class="offers-filter-item offers-filter-item--currency">
+							<div class="offers-filter-title">Pair: </div>
+							<div class="offers-filter-item-control">
+								<select><option>BTC</option><option>ETH</option></select>
+								<b> / </b>
+								<select><option>BTC</option><option>ETH</option></select>
+							</div>
+						</div>
+						<div class="offers-filter-item offers-filter-item--price-view">
+							<div class="offers-filter-title">Price: </div>
+							<div class="offers-filter-item-control">
+								<div class="radios">
+									<label class="radio-text">
+										<input name="offers-buy-price-view" type="radio" checked>
+										<span class="radio-text__text">Per one</span>
+									</label>
+									<label class="radio-text">
+										<input name="offers-buy-price-view" type="radio">
+										<span class="radio-text__text">Per all</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="offers-list offers-list--buy offers-list--active js-offers-list js-offers-list-buy">
+						<div class="table-wrap">
+						<table id="buying-offers" class="dataTable offers-table display" role="grid">
+						    <thead class="offers-table-header">
+						        <tr role="row">
+						            <th class="sorting_asc" tabindex="0" aria-sort="ascending">Volume</th>
+						            <th class="sorting" tabindex="0">Price</th>
+						            <th>Actions</th>
+						        </tr>
+						    </thead>
+						    <tbody>
+								@@include('../contents/_offers-list-tr.html')
+								@@include('../contents/_offers-list-tr.html')
+								@@include('../contents/_offers-list-tr.html')
+								@@include('../contents/_offers-list-tr.html')
+						    </tbody>
+						</table>
+						</div>
+						<div class="offers-table-refresh">
+							<button class="offers-table-refresh__btn">Refresh offers</button>
+						</div>	
+					</div>
+
+					<div class="offers-list offers-list--sell js-offers-list js-offers-list-sell">
+						<div class="table-wrap">
+						<table id="selling-offers" class="dataTable offers-table display" role="grid">
+						    <thead class="offers-table-header">
+						        <tr role="row">
+						            <th class="sorting_asc" tabindex="0" aria-sort="ascending">Volume</th>
+						            <th class="sorting" tabindex="0">Price</th>
+						            <th>Actions</th>
+						        </tr>
+						    </thead>
+						    <tbody>
+								@@include('../contents/_offers-list-tr.html')
+								@@include('../contents/_offers-list-tr.html')
+								@@include('../contents/_offers-list-tr.html')
+								@@include('../contents/_offers-list-tr.html')
+						    </tbody>
+						</table>
+						</div>
+						<div class="offers-table-refresh">
+							<button class="offers-table-refresh__btn">Refresh offers</button>
+						</div>	
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		
+		<div class="divider divider--m"></div>
+
+	</div>
+</section>

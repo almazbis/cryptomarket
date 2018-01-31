@@ -1,0 +1,48 @@
+.home-history-tables {
+	background: rgba(darken($prim, 10%), .05);
+}
+
+.home-history-col-inner {
+	height: 100%;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+
+	> * {
+		width: 100%;
+		flex: 1;
+		flex-basis: 100%;
+	}
+
+}
+
+.home-history-col-title {
+	display: none;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+
+@media screen and (max-width: 991px) {
+
+	.home-history-top {
+		display: none;
+	}
+
+	.home-history-tables {
+
+		> .cont {
+			max-width: 640px;
+		}
+	}
+
+	.home-history-col {
+		margin-bottom: 45px;
+	}
+
+	.home-history-col-title {
+		display: block;
+	}
+
+}

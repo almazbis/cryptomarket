@@ -1,0 +1,49 @@
+.modal {
+
+	.close {
+		background: url(../assets/icons/modal-close.svg) no-repeat center;
+		background-size: 16px;
+
+		position: absolute;
+		z-index: 2;
+		top: 15px;
+		right: 15px;
+	    padding: 1rem;
+		margin: 0;
+
+		transition: $transition-faster;
+	}
+
+}
+
+
+
+
+.modal-header {
+	border: none;
+	// margin-bottom: 30px;
+}
+
+.modal-footer {
+	border: none;
+
+}
+
+.modal-title {
+	font-family: $font-proxima;
+	font-weight: bold;
+	opacity: .7;
+}
+
+.modal-content {
+	border-color: transparent;
+
+	position: relative;
+}
+
+.modal-body {
+	background-color: rgba(desaturate($prim, 60%), .03);
+
+	padding-top: 30px;
+	padding-bottom: 30px;
+}

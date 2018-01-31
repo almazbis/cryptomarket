@@ -1,0 +1,67 @@
+
+// ### TABLES ###
+
+.trade-history-table {
+	width: 100%;
+	max-width: 100%;
+	overflow: auto;
+	margin-bottom: 15px;
+
+	background: rgba(desaturate($prim, 60%), .03);
+
+	td, th {
+		font-size: 14px;
+		padding: 4px 18px;
+		vertical-align: middle;
+	}
+}
+
+.trade-history-table-header {
+
+	th {
+		border: none !important;
+		background: rgba($black, .03);
+	}
+}
+
+
+
+
+
+
+table.trade-history-table tbody th, 
+table.trade-history-table tbody td {
+	font-size: 14px;
+	padding: 4px 18px;
+}
+
+table.trade-history-table tbody tr {
+	background: transparent;
+}
+
+table.trade-history-table.no-footer {
+	border: none;
+}
+
+
+table.trade-history-table.display tbody tr:hover>.sorting_1, 
+table.trade-history-table.order-column.hover tbody tr:hover>.sorting_1,
+table.trade-history-table.display tbody tr.odd>.sorting_1, 
+table.trade-history-table.order-column.stripe tbody tr.odd>.sorting_1,
+table.trade-history-table.stripe tbody tr.odd, 
+table.trade-history-table.display tbody tr.odd,
+table.trade-history-table.hover tbody tr:hover, 
+table.trade-history-table.display tbody tr:hover,
+table.trade-history-table.display tbody tr.even>.sorting_1, 
+table.trade-history-table.order-column.stripe tbody tr.even>.sorting_1 {
+	background: transparent;
+	border: none;
+}
+
+table.trade-history-table.row-border tbody th, 
+table.trade-history-table.row-border tbody td, 
+table.trade-history-table.display tbody th, 
+table.trade-history-table.display tbody td {
+	border: none;
+}
+

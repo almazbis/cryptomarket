@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('./partials/head.html')
+</head>
+<body>
+
+@@include('./components/_rates.html')
+
+
+@@include('./partials/header-logged-in.html')
+
+<div class="page-inner">
+<div class="profile">
+	<div class="cont">
+
+		<div class="row">
+			
+			<div class="col-12 col-xl-3 profile-col profile-col--details">
+				<div class="profile-details">
+					<div class="profile-details-inner">
+						<div class="profile-pic"><img src="img/profile-pic-2.png" alt="weaboo"></div>
+						<div class="profile-details__rest">
+							<div class="profile-nickname">weaboo</div>
+							<div class="profile-since">
+								<p>Joined 8 days ago</p>
+								<p>Last seen: <span class="nowrap">Dec 23, 2017, 13:29</span></p>
+							</div>
+							<div class="profile-status">i am anime girl</div>
+							<div class="profile-actions">
+								<a href="#" class="">Report user</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-md profile-col profile-col--history">
+
+				@@include('./includes/_profile-history.html')
+
+			</div>
+
+		</div>
+	</div>	
+</div>	
+</div>
+
+
+
+
+
+
+@@include('./partials/footer.html')
+
+
+@@include('./includes/_modal-deal-waiting.html')
+
+@@include('./includes/_modal-deal-pending-payment.html')
+
+@@include('./includes/_modal-offer.html')
+
+@@include('./includes/_modal-login.html')
+
+@@include('./includes/_modal-register.html')
+
+@@include('./includes/_modal-forgot-pass.html')
+
+
+@@include('./partials/footer-scripts.html')
+
+</body>
+</html>

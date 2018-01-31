@@ -1,0 +1,35 @@
+.home-my-history-login {
+	text-align: center;
+	background-color: rgba(darken($prim, 20%), .02);
+
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	height: 100%;
+	padding-top: 30px;
+	padding-bottom: 75px;
+
+	p {
+		max-width: 200px;
+		margin-right: auto;
+		margin-left: auto;
+		color: rgba($black, .7);
+	}
+
+	a {
+		font-weight: 600;
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+}
+
+
+@media screen and (max-width: 991px) { 
+
+	.home-my-history-login {
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+
+
+}

@@ -1,0 +1,140 @@
+.profile-details {
+	// background-color: rgba(desaturate($prim, 70%), .05);
+
+	border: 2px solid rgba(desaturate($prim, 70%), .1);
+	border-radius: 4px;
+
+	// max-width: 240px;
+
+
+	overflow: auto;
+
+	&__rest {
+		padding: 15px;
+	}
+
+	.profile-pic {
+		padding: 15px;
+		margin-bottom: 30px;
+	}
+}
+
+.profile-details-inner {
+	// max-width: 360px;
+	// margin-right: auto;
+	// margin-left: auto;
+}
+
+.profile-pic {
+
+	img {
+		border-radius: 4px;
+
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+
+@media (min-width: 361px) and (max-width: 1199px) {
+
+	.profile-details {
+
+		&__rest {
+			float: left;
+			width: calc(100% - 230px);
+		}
+
+		.profile-pic {
+			margin-bottom: 0;
+			float: left;
+			width: 230px;
+		}
+	}
+
+	.profile-pic {
+
+		img {
+			// width: 200px;
+		}
+	}
+
+}
+
+
+@media (min-width: 361px) and (max-width: 480px) {
+
+	.profile-details {
+
+		&__rest {
+			float: left;
+			width: calc(100% - 150px);
+			padding-left: 0;
+		}
+
+		.profile-pic {
+			width: 150px;
+		}
+	}
+
+}
+
+
+.profile-nickname {
+	font-size: 1.2em;
+	font-weight: 600;
+
+	margin-bottom: 5px;
+}
+
+.profile-since{
+	font-size: 14px;
+	opacity: .5;
+
+	margin-bottom: 5px;
+
+	p {
+		margin: 0;
+	}
+}
+
+.profile-status {
+	font-size: 14px;
+	border-top: 2px solid rgba(desaturate($prim, 70%), .1);
+	border-radius: 2px;
+
+	margin-top: 15px;
+	padding-top: 15px;
+
+	textarea {
+		padding: 5px;
+		width: 100%;
+		min-height: 100px;
+	}
+}
+
+
+.profile-actions {
+	margin-top: 30px;
+}
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+
+	.profile-details {
+
+		&__rest {
+			padding: 30px;
+			padding-top: 0;
+		}
+
+		.profile-pic {
+			padding: 30px;
+			padding-bottom: 0;
+		}
+	}
+
+}

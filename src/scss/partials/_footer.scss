@@ -1,0 +1,41 @@
+.footer {
+	border-top: 2px solid rgba(desaturate($prim, 30%), .1);
+
+	padding-top: 45px;
+	padding-bottom: 30px;
+}
+
+.footer-col {
+	margin-bottom: 15px;
+
+	&--copy {
+
+		.copyright {
+			font-size: 1em;
+			opacity: .5;
+		}
+
+		@media screen and (min-width: 576px) {
+			text-align: right;
+		}
+	}
+}
+
+
+.footer-logo {
+	opacity: .5;
+
+	img {
+		width: 200px;
+	}
+}
+
+
+.footer-small {
+	opacity: .5;
+
+	small {
+		font-size: 14px;
+		line-height: initial;
+	}
+}

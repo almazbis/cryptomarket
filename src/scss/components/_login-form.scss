@@ -1,0 +1,29 @@
+.login-form {
+	padding-bottom: 30px;
+
+	&__title {
+		font-size: 1.6em;
+		font-weight: bold;
+		text-align: center;
+
+		margin-bottom: 30px;
+	}
+
+	&__form {
+		max-width: 360px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	&__forgot {
+		font-size: 14px;
+		border-top: 1px solid rgba($black, .1);
+
+		max-width: 360px;
+		padding-top: 30px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 45px;
+	}
+
+}

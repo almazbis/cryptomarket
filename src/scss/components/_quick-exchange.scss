@@ -1,0 +1,160 @@
+.quick-ex {
+	// background: url(../assets/img/top-bg.svg) no-repeat left center;
+	// background-size: auto 100%;
+	
+	position: relative;
+	padding-top: 120px;
+	padding-bottom: 150px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-bottom: 90px;
+}
+
+.quick-ex-col {
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+	&--switch {
+		align-self: stretch;
+		display: flex;
+		align-items: center;
+	}
+
+	&--submit {
+		align-self: center;
+	}
+
+}
+
+
+.quick-ex-switch {
+
+	button {
+		font-size: 0;
+		line-height: 0;
+		background: url(../assets/icons/quick-ex-switch.svg) no-repeat center;
+		background-size: auto 95%;
+		border: none;
+
+		width: 48px;
+		height: 48px;
+
+		transition: $transition;
+
+		&:hover, &:focus {
+			outline: none;
+			transform: rotate(180deg);
+		}
+	}
+}
+
+
+.quick-ex-submit {
+	height: 74px;
+}
+
+
+.quick-ex-curr {
+
+	&__title {
+		font-family: $font-proxima;
+		font-size: 22px;
+		font-weight: bold;
+		
+		margin-bottom: 10px;
+	}
+}
+
+
+.quick-ex-form {
+	border-bottom: 1px solid rgba($black, .2);
+
+	position: relative;
+
+	&__number {
+		font-family: $font-roboto-cond;
+
+		input {
+			font-family: $font-roboto-cond;
+			font-size: 48px;
+			font-weight: 300;
+			background: transparent;
+			border: none;
+
+			width: 100%;
+			padding-right: 68px;
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+
+	&__currency {
+		font-weight: bold;
+
+		position: absolute;
+		z-index: 1;
+		bottom: 5px;
+		right: 0;
+
+		select {
+			font-weight: bold;
+			border: none;
+			background: transparent;
+		}
+
+		option {
+			font-weight: bold;
+		}
+	}
+
+}
+
+
+.quick-ex-rate-tip {
+	font-size: 13px;
+	font-weight: 600;
+	opacity: .5;
+
+	margin-top: 10px;
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+	
+	.quick-ex-submit {
+		width: 100%;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+
+	.quick-ex-switch {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+
+	.quick-ex-col {
+		max-width: 400px;
+	}
+
+	.quick-ex-switch {
+
+		button {
+			transform: rotate(90deg);
+
+			&:hover, &:focus {
+				transform: rotate(270deg);
+			}
+		}
+	}
+
+}

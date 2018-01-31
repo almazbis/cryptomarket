@@ -1,0 +1,87 @@
+input.no-spinners {
+
+  &::-webkit-outer-spin-button, 
+  &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+   
+  & {
+      -moz-appearance: textfield;
+  }
+
+}
+
+.input-label {
+	display: block;
+  width: 100%;
+	margin: 0;
+
+	input {
+		width: 100%;
+	}
+}
+
+
+.input-title {
+  font-family: $font-proxima;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: .7;
+
+  display: block;
+  padding-left: 1px;
+  margin-bottom: 5px;
+}
+
+// .input-primary {
+
+// 	input {
+// 		border: 1px solid $prim;
+// 		border-radius: 2px;
+
+// 		padding: 6px 10px;
+
+// 		&:focus {
+// 			outline: none;
+// 			border-color: darken($prim, 10%);
+// 			box-shadow: 0 0 5px rgba($prim, .2);
+// 		}
+
+// 	}
+// }
+
+
+
+
+
+
+
+
+
+
+.radio-text {
+  $c: &;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  &__text {
+    display: inline-block;
+    line-height: 1;
+    padding: 6px 14px;
+    padding-top: 7px;
+    border-radius: 99px;
+    cursor: pointer;
+
+    transition: $transition;
+    user-select: none;
+  }
+
+  input[type="radio"]:checked ~ #{$c}__text {
+    background-color: rgba($prim, .2);
+    color: $prim;
+  }
+}
+

@@ -1,0 +1,77 @@
+.deal {
+	text-decoration: none;
+	color: $black;
+	background-color: rgba(desaturate($prim, 70%), .15);
+	border-radius: 4px;
+
+	display: block;
+	padding: 10px 15px;
+
+	transition: $transition-faster;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		color: $black;
+		background-color: rgba(desaturate($prim, 70%), .25);
+	}
+
+	&--waiting-for-seller {
+
+		.deal-status__value {
+			color: $black;
+		}
+	}
+
+	&--pending-payment {
+
+		.deal-status__value {
+			color: $prim;
+		}
+	}
+
+	&--error {
+
+		.deal-status__value {
+			color: $red;
+		}
+	}
+
+	&--pending-mods {
+
+		.deal-status__value {
+			color: $green;
+		}
+	}
+
+}
+
+.deal-sum {
+	font-size: 1.2em;
+
+	display: block;
+	margin-bottom: 5px;
+
+	b {
+		display: inline-block;
+		margin-left: 3px;
+		margin-right: 3px;
+	}
+
+	&__number {
+
+	}
+
+	&__currency {
+		display: inline-block;
+		margin-left: 3px;
+	}
+}
+
+
+.deal-status {
+
+	&__value {
+
+	}
+}
