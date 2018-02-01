@@ -7,11 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="plugins/datatables/datatables.min.css"/>
-<!-- <link rel="stylesheet" type="text/css" href="plugins/datatables/scroller.dataTables.min.css"/> -->
-
-<link rel="stylesheet" href="css/style.css?v=3.3">
-
+<link rel="stylesheet" type="text/css" href="plugins/datatables/datatables.min.css?v=1.1"/>
+<link rel="stylesheet" href="css/style.css?v=3.6">
 </head>
 <body>
 
@@ -34,8 +31,11 @@
 			<mask id="maska">
 				<g class="blobs">
 					<circle class="blob" cx="60" cy="440" r="120"  transform="rotate(0) translate(0, 0) rotate(0)"/>
-					<circle class="blob" cx="250" cy="240" r="90"  transform="rotate(0) translate(0, 0) rotate(0)"/>
-					<circle class="blob" cx="380" cy="350" r="150"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+
+					<circle class="blob" cx="300" cy="300" r="150"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+					<circle class="blob" cx="430" cy="400" r="90"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+					<circle class="blob" cx="390" cy="520" r="50"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+
 					<circle class="blob" cx="490" cy="530" r="25" transform="rotate(0) translate(0, 0) rotate(0)"/>
 					<circle class="blob" cx="530" cy="485" r="10" transform="rotate(0) translate(0, 0) rotate(0)"/>
 					<circle class="blob" cx="680" cy="350" r="70"  transform="rotate(0) translate(0, 0) rotate(0)"/>
@@ -335,13 +335,14 @@
 			<div class="col-12 col-lg-6 home-market-col home-market-col--new-offer">
 				<div class="new-offer">
 					
-					<div class="section-title new-offer-choose home-market-title">
+					<div class="new-offer-choose home-market-title">
 						I want to
 						<form id="switch-offer-type" class="radios">
 							<label class="radio-text">
 								<input name="new-offer-type" type="radio" value="buy" checked>
 								<span class="radio-text__text">buy</span>
 							</label>
+							<span class="new-offer-choose__or"> or </span>
 							<label class="radio-text">
 								<input name="new-offer-type" type="radio" value="sell">
 								<span class="radio-text__text">sell</span>
@@ -351,7 +352,7 @@
 
 					<div class="new-offer-buying new-offer-form new-offer-form--active js-new-offer-form js-new-offer-buying">
 	
-	<div class="new-offer-tip">Highest bid: <div class="new-offer-tip-value js-new-offer-tip-value-buying" data-value="11000"><span>11000</span> USD</div></div>
+	<div class="new-offer-tip home-market-top-panel">Highest bid: <div class="new-offer-tip-value js-new-offer-tip-value-buying" data-value="11000"><span>11000</span> USD</div></div>
 
 	<div class="new-offer-box">
 		<div class="new-offer-box__inner">
@@ -434,7 +435,7 @@
 
 					<div class="new-offer-selling new-offer-form js-new-offer-form js-new-offer-selling">
 	
-	<div class="new-offer-tip">Lowest ask: <div class="new-offer-tip-value js-new-offer-tip-value-selling" data-value="11000"><span>11000</span> USD</div></div>
+	<div class="new-offer-tip home-market-top-panel">Lowest ask: <div class="new-offer-tip-value js-new-offer-tip-value-selling" data-value="11000"><span>11000</span> USD</div></div>
 
 	<div class="new-offer-box">
 		<div class="new-offer-box__inner">
@@ -523,10 +524,10 @@
 			<div class="col-12 col-lg-6 home-market-col home-market-col--offers">
 				<div class="offers__inner">
 					
-					<div class="section-title home-market-title offers-title offers-title-buy offers-title--active js-offers-title js-offers-title-buy">Available offers for buyers</div>
-					<div class="section-title home-market-title offers-title offers-title-sell js-offers-title js-offers-title-sell">Available offers for sellers</div>
+					<div class="home-market-title offers-title offers-title-buy offers-title--active js-offers-title js-offers-title-buy">Available offers for buyers</div>
+					<div class="home-market-title offers-title offers-title-sell js-offers-title js-offers-title-sell">Available offers for sellers</div>
 
-					<div class="offers-filter">
+					<div class="offers-filter home-market-top-panel">
 						<div class="offers-filter-item offers-filter-item--currency">
 							<div class="offers-filter-title">Pair: </div>
 							<div class="offers-filter-item-control">
@@ -1384,7 +1385,8 @@
 
 <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/main.js?v=3.1"></script>
+<script src="plugins/TweenMax.min.js"></script>
+<script src="js/main.js?v=3.2"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 <script>
@@ -1399,39 +1401,8 @@
   });
 </script>
 
-
-
 <script type="text/javascript" src="plugins/datatables/datatables.min.js" defer></script>
 <!-- <script type="text/javascript" src="plugins/datatables/dataTables.scroller.min.js" defer></script> -->
-
-<script src="plugins/TweenMax.min.js"></script>
-
-<script>
-
-	var radius = 8;
-	TweenMax.staggerFromTo('.blob', 30 ,{
-		cycle: {
-			attr:function(i) {
-				var r = i*90;
-				return {
-					transform:'rotate('+r+') translate('+radius+',0.1) rotate('+(-r)+')'
-				}      
-			}
-		}  
-	},{
-		cycle: {
-			attr:function(i) {
-				var r = i*90+360;
-				return {
-					transform:'rotate('+r+') translate('+radius+',0.1) rotate('+(-r)+')'
-				}      
-			}
-		},
-		ease:Linear.easeNone,
-		repeat:-1
-	});
-
-</script>
 
 </body>
 </html>

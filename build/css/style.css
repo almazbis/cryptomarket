@@ -483,7 +483,7 @@ input.no-spinners {
 .radio-text__text {
   display: inline-block;
   line-height: 1;
-  padding: 6px 14px;
+  padding: 5px 10px;
   padding-top: 7px;
   border-radius: 99px;
   cursor: pointer;
@@ -498,6 +498,10 @@ input.no-spinners {
 .radio-text input[type="radio"]:checked ~ .radio-text__text {
   background-color: rgba(3, 169, 244, 0.2);
   color: #03A9F4;
+}
+
+.radios label {
+  margin-bottom: 0;
 }
 
 .divider {
@@ -810,7 +814,7 @@ input.no-spinners {
 
 .rates {
   position: relative;
-  border-bottom: 2px solid rgba(34, 38, 41, 0.05);
+  background: #0497da;
   height: 54px;
 }
 
@@ -826,14 +830,14 @@ input.no-spinners {
 
 .rates::before {
   left: 0;
-  background: -webkit-gradient(linear, left top, right top, from(#FAFBFE), color-stop(rgba(250, 251, 254, 0.9)), to(rgba(250, 251, 254, 0)));
-  background: linear-gradient(90deg, #FAFBFE, rgba(250, 251, 254, 0.9), rgba(250, 251, 254, 0));
+  background: -webkit-gradient(linear, left top, right top, from(#0497da), color-stop(rgba(4, 151, 218, 0.9)), to(rgba(4, 151, 218, 0)));
+  background: linear-gradient(90deg, #0497da, rgba(4, 151, 218, 0.9), rgba(4, 151, 218, 0));
 }
 
 .rates::after {
   right: 0;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(250, 251, 254, 0)), color-stop(rgba(250, 251, 254, 0.9)), to(#FAFBFE));
-  background: linear-gradient(90deg, rgba(250, 251, 254, 0), rgba(250, 251, 254, 0.9), #FAFBFE);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(4, 151, 218, 0)), color-stop(rgba(4, 151, 218, 0.9)), to(#0497da));
+  background: linear-gradient(90deg, rgba(4, 151, 218, 0), rgba(4, 151, 218, 0.9), #0497da);
 }
 
 .rates-track {
@@ -862,6 +866,7 @@ input.no-spinners {
 }
 
 .rates-item {
+  color: #fff;
   white-space: nowrap;
   padding: 15px 10px;
   min-width: 120px;
@@ -905,12 +910,12 @@ input.no-spinners {
 }
 
 .rates-prev {
-  background-image: url(../assets/icons/rates-prev.svg);
+  background-image: url(../assets/icons/rates-prev.svg?v=1);
   left: 0px;
 }
 
 .rates-next {
-  background-image: url(../assets/icons/rates-next.svg);
+  background-image: url(../assets/icons/rates-next.svg?v=1);
   right: 0px;
 }
 
@@ -1367,17 +1372,36 @@ input.no-spinners {
   margin-bottom: 45px;
 }
 
+.home-market-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
 .home-market-title .radios {
   display: inline-block;
   color: rgba(34, 38, 41, 0.5);
 }
 
+.home-market-title .radio-text__text {
+  padding: 0;
+}
+
+.home-market-title .radio-text input[type="radio"]:checked ~ .radio-text__text {
+  background: transparent;
+  color: #222629;
+  pointer-events: none;
+}
+
+.home-market-top-panel {
+  background: #EAEFF4;
+  border-radius: 4px;
+  padding: 15px;
+}
+
 @media screen and (max-width: 991px) {
   .home-market > .cont {
     max-width: 640px;
-  }
-  .home-market-title {
-    font-size: 2.2em;
   }
 }
 
@@ -1395,6 +1419,13 @@ input.no-spinners {
 
 .new-offer-choose option {
   font-weight: bold;
+}
+
+.new-offer-choose__or {
+  font-size: 1rem;
+  opacity: .5;
+  display: inline-block;
+  margin-left: 3px;
 }
 
 .new-offer-form {
@@ -1419,6 +1450,7 @@ input.no-spinners {
 
 .new-offer-box {
   background-color: #fff;
+  border: 2px solid #EAEFF4;
   border-radius: 4px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -1494,12 +1526,6 @@ input.no-spinners {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .new-offer-tip {
-    height: 35px;
-  }
-}
-
 .offers-title {
   display: none;
 }
@@ -1518,6 +1544,7 @@ input.no-spinners {
 
 .offers-filter {
   margin-bottom: 30px;
+  padding-top: 12px;
 }
 
 .offers-filter select {
@@ -1548,10 +1575,11 @@ input.no-spinners {
 }
 
 .offers-table {
+  background: rgba(77, 141, 170, 0.03);
+  border-radius: 4px;
   width: 100%;
   overflow: auto;
   margin-bottom: 15px;
-  background: rgba(77, 141, 170, 0.03);
 }
 
 .offers-table td, .offers-table th {
@@ -1563,6 +1591,14 @@ input.no-spinners {
 .offers-table-header th {
   border: none !important;
   background: rgba(34, 38, 41, 0.05);
+}
+
+.offers-table-header th:first-child {
+  border-top-left-radius: 4px;
+}
+
+.offers-table-header th:last-child {
+  border-top-right-radius: 4px;
 }
 
 .offers-table-actions {
@@ -1641,44 +1677,9 @@ tr:hover .offers-table-actions {
   background-color: rgba(3, 152, 219, 0.25);
 }
 
-table.offers-table tbody th,
-table.offers-table tbody td {
-  font-size: 14px;
-  padding: 10px 18px;
-}
-
-table.offers-table tbody tr {
-  background: transparent;
-}
-
-table.offers-table.no-footer {
-  border: none;
-}
-
-table.offers-table.display tbody tr:hover > .sorting_1,
-table.offers-table.order-column.hover tbody tr:hover > .sorting_1,
-table.offers-table.display tbody tr.odd > .sorting_1,
-table.offers-table.order-column.stripe tbody tr.odd > .sorting_1,
-table.offers-table.stripe tbody tr.odd,
-table.offers-table.display tbody tr.odd,
-table.offers-table.hover tbody tr:hover,
-table.offers-table.display tbody tr:hover,
-table.offers-table.display tbody tr.even > .sorting_1,
-table.offers-table.order-column.stripe tbody tr.even > .sorting_1 {
-  background: transparent;
-  border: none;
-}
-
-table.offers-table.row-border tbody th,
-table.offers-table.row-border tbody td,
-table.offers-table.display tbody th,
-table.offers-table.display tbody td {
-  border: none;
-}
-
 @media screen and (min-width: 768px) {
   .offers-filter {
-    height: 46px;
+    height: 55px;
   }
 }
 
@@ -2057,7 +2058,7 @@ rect {
 .dem-blobs {
   position: absolute;
   z-index: -1;
-  top: 150px;
+  top: 130px;
   width: 100%;
   max-width: 100vw;
   height: 800px;

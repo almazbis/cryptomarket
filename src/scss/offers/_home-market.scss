@@ -4,14 +4,40 @@
 
 
 .home-market-title {
+	font-size: 2em;
+	font-weight: bold;
+
+	margin-bottom: 20px;
 
 	.radios {
 		display: inline-block;
 		color: rgba($black, .5);
 	}
 
+	.radio-text {
+
+	  &__text {
+	    padding: 0;
+   
+	  }
+
+	  input[type="radio"]:checked ~ .radio-text__text {
+	    background: transparent;
+	    color: $black;
+
+	    pointer-events: none;
+	  }
+	}
+
 }
 
+
+.home-market-top-panel {
+	background: $gray;
+	border-radius: 4px;
+
+	padding: 15px;
+}
 
 
 @media screen and (max-width: 991px) {
@@ -21,10 +47,6 @@
 		> .cont {
 			max-width: 640px;
 		}
-	}
-
-	.home-market-title {
-		font-size: 2.2em;
 	}
 
 }

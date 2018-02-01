@@ -17,6 +17,15 @@
 		font-weight: bold;
 	}
 
+	&__or {
+		font-size: 1rem;
+		opacity: .5;
+
+		display: inline-block;
+		// margin-right: 3px;
+		margin-left: 3px;
+	}
+
 }
 
 
@@ -44,6 +53,7 @@
 
 .new-offer-box {
 	background-color: #fff;
+	border: 2px solid $gray;
 	border-radius: 4px;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -134,8 +144,8 @@
 
 @media screen and (min-width: 768px) {
 
-	.new-offer-tip {
-		height: 35px;
-	}
+	// .new-offer-tip {
+	// 	height: 35px;
+	// }
 
 }

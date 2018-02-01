@@ -70,7 +70,7 @@ input.no-spinners {
   &__text {
     display: inline-block;
     line-height: 1;
-    padding: 6px 14px;
+    padding: 5px 10px;
     padding-top: 7px;
     border-radius: 99px;
     cursor: pointer;
@@ -85,3 +85,11 @@ input.no-spinners {
   }
 }
 
+
+
+.radios {
+
+  label {
+    margin-bottom: 0;
+  }
+}

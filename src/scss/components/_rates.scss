@@ -1,6 +1,34 @@
+// .rates {
+// 	position: relative;
+// 	border-bottom: 2px solid rgba($black, .05);
+// 	height: 54px;
+
+// 	&::before,
+// 	&::after {
+// 		content: "";
+// 		display: block;
+// 		position: absolute;
+// 		z-index: 1;
+// 		top: 0;
+// 		height: 100%;
+// 		width: 120px;
+// 	}
+
+// 	&::before {
+// 		left: 0;
+// 		background: linear-gradient(90deg, $bg, rgba($bg, .9), rgba($bg, 0));
+// 	}
+
+// 	&::after {
+// 		right: 0;
+// 		background: linear-gradient(90deg, rgba($bg, 0), rgba($bg, .9), $bg);
+// 	}
+// }
+
 .rates {
 	position: relative;
-	border-bottom: 2px solid rgba($black, .05);
+	// border-bottom: 2px solid rgba($black, .05);
+	background: darken(desaturate($prim, 1%), 5%);
 	height: 54px;
 
 	&::before,
@@ -16,12 +44,12 @@
 
 	&::before {
 		left: 0;
-		background: linear-gradient(90deg, $bg, rgba($bg, .9), rgba($bg, 0));
+		background: linear-gradient(90deg, darken(desaturate($prim, 1%), 5%), rgba(darken(desaturate($prim, 1%), 5%), .9), rgba(darken(desaturate($prim, 1%), 5%), 0));
 	}
 
 	&::after {
 		right: 0;
-		background: linear-gradient(90deg, rgba($bg, 0), rgba($bg, .9), $bg);
+		background: linear-gradient(90deg, rgba(darken(desaturate($prim, 1%), 5%), 0), rgba(darken(desaturate($prim, 1%), 5%), .9), darken(desaturate($prim, 1%), 5%));
 	}
 }
 
@@ -48,7 +76,16 @@
 
 }
 
+// .rates-item {
+// 	white-space: nowrap;
+
+// 	padding: 15px 10px;
+// 	min-width: 120px;
+// 	height: 54px;
+// }
+
 .rates-item {
+	color: #fff;
 	white-space: nowrap;
 
 	padding: 15px 10px;
@@ -96,12 +133,12 @@
 }
 
 .rates-prev {
-	background-image: url(../assets/icons/rates-prev.svg);
+	background-image: url(../assets/icons/rates-prev.svg?v=1);
 	left: 0px;
 }
 
 .rates-next {
-	background-image: url(../assets/icons/rates-next.svg);
+	background-image: url(../assets/icons/rates-next.svg?v=1);
 	right: 0px;
 }
 

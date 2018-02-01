@@ -31,5 +31,8 @@ $(document).ready(function(){
 @@include('./includes/_header-user-dropdown.js');
 
 
+@@include('./includes/_init-blobs.js');
+
+
 });
 

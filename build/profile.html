@@ -7,11 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="plugins/datatables/datatables.min.css"/>
-<!-- <link rel="stylesheet" type="text/css" href="plugins/datatables/scroller.dataTables.min.css"/> -->
-
-<link rel="stylesheet" href="css/style.css?v=3.3">
-
+<link rel="stylesheet" type="text/css" href="plugins/datatables/datatables.min.css?v=1.1"/>
+<link rel="stylesheet" href="css/style.css?v=3.6">
 </head>
 <body>
 
@@ -639,7 +636,8 @@
 
 <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/main.js?v=3.1"></script>
+<script src="plugins/TweenMax.min.js"></script>
+<script src="js/main.js?v=3.2"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 <script>
@@ -654,39 +652,8 @@
   });
 </script>
 
-
-
 <script type="text/javascript" src="plugins/datatables/datatables.min.js" defer></script>
 <!-- <script type="text/javascript" src="plugins/datatables/dataTables.scroller.min.js" defer></script> -->
-
-<script src="plugins/TweenMax.min.js"></script>
-
-<script>
-
-	var radius = 8;
-	TweenMax.staggerFromTo('.blob', 30 ,{
-		cycle: {
-			attr:function(i) {
-				var r = i*90;
-				return {
-					transform:'rotate('+r+') translate('+radius+',0.1) rotate('+(-r)+')'
-				}      
-			}
-		}  
-	},{
-		cycle: {
-			attr:function(i) {
-				var r = i*90+360;
-				return {
-					transform:'rotate('+r+') translate('+radius+',0.1) rotate('+(-r)+')'
-				}      
-			}
-		},
-		ease:Linear.easeNone,
-		repeat:-1
-	});
-
-</script>
 
 </body>
 </html>
