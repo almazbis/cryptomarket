@@ -10,14 +10,15 @@
 <link rel="stylesheet" type="text/css" href="plugins/datatables/datatables.min.css"/>
 <!-- <link rel="stylesheet" type="text/css" href="plugins/datatables/scroller.dataTables.min.css"/> -->
 
-<link rel="stylesheet" href="css/style.css?v=3.1">
+<link rel="stylesheet" href="css/style.css?v=3.3">
 
 </head>
 <body>
 
+
 <div class="dem-blobs">
 	<div class="bg-blob bg-blob-1">
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="loader">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="blobs-svg">
 			<defs>
 				<filter id="goo">
 					<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
@@ -33,15 +34,18 @@
 			<mask id="maska">
 				<g class="blobs">
 					<circle class="blob" cx="60" cy="440" r="120"  transform="rotate(0) translate(0, 0) rotate(0)"/>
-					<circle class="blob" cx="250" cy="220" r="70"  transform="rotate(0) translate(0, 0) rotate(0)"/>
-					<circle class="blob" cx="430" cy="240" r="30" transform="rotate(0) translate(0, 0) rotate(0)"/>
-					<!-- <circle class="blob" cx="200" cy="320" r="50"  transform="rotate(0) translate(0, 0) rotate(0)"/> -->
-					<circle class="blob" cx="380" cy="410" r="130"  transform="rotate(0) translate(0, 0) rotate(0)"/>
-					<circle class="blob" cx="580" cy="340" r="70"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+					<circle class="blob" cx="250" cy="240" r="90"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+					<circle class="blob" cx="380" cy="350" r="150"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+					<circle class="blob" cx="490" cy="530" r="25" transform="rotate(0) translate(0, 0) rotate(0)"/>
+					<circle class="blob" cx="530" cy="485" r="10" transform="rotate(0) translate(0, 0) rotate(0)"/>
+					<circle class="blob" cx="680" cy="350" r="70"  transform="rotate(0) translate(0, 0) rotate(0)"/>
 					<circle class="blob" cx="640" cy="480" r="60"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+
+					<circle class="blob" cx="875" cy="490" r="10"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+					<circle class="blob" cx="900" cy="480" r="20"  transform="rotate(0) translate(0, 0) rotate(0)"/>
 				</g>
 			</mask>
-			<rect x="0" y="0"  mask="url(#maska)" fill="url(#MyGradient)" width="900" height="600">
+			<rect x="0" y="0"  mask="url(#maska)" fill="url(#MyGradient)" width="1300" height="600">
 		</svg>	
 	</div>
 </div>

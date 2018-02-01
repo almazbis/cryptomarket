@@ -5,36 +5,8 @@
 </head>
 <body>
 
-<div class="dem-blobs">
-	<div class="bg-blob bg-blob-1">
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="loader">
-			<defs>
-				<filter id="goo">
-					<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-					<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-					<feBlend in2="goo" in="SourceGraphic" result="mix" />
-				</filter>
-				<linearGradient id="MyGradient">
-						<stop offset="5%"  stop-color="#367AFF"/>
-						<stop offset="40%" stop-color="#36DBFF"/>
-						<stop offset="100%" stop-color="#D736FF"/>
-				</linearGradient>
-			</defs>
-			<mask id="maska">
-				<g class="blobs">
-					<circle class="blob" cx="60" cy="440" r="120"  transform="rotate(0) translate(0, 0) rotate(0)"/>
-					<circle class="blob" cx="250" cy="220" r="70"  transform="rotate(0) translate(0, 0) rotate(0)"/>
-					<circle class="blob" cx="430" cy="240" r="30" transform="rotate(0) translate(0, 0) rotate(0)"/>
-					<!-- <circle class="blob" cx="200" cy="320" r="50"  transform="rotate(0) translate(0, 0) rotate(0)"/> -->
-					<circle class="blob" cx="380" cy="410" r="130"  transform="rotate(0) translate(0, 0) rotate(0)"/>
-					<circle class="blob" cx="580" cy="340" r="70"  transform="rotate(0) translate(0, 0) rotate(0)"/>
-					<circle class="blob" cx="640" cy="480" r="60"  transform="rotate(0) translate(0, 0) rotate(0)"/>
-				</g>
-			</mask>
-			<rect x="0" y="0"  mask="url(#maska)" fill="url(#MyGradient)" width="900" height="600">
-		</svg>	
-	</div>
-</div>
+
+@@include('./components/_bg-blobs.html')
 
 
 @@include('./components/_rates.html')

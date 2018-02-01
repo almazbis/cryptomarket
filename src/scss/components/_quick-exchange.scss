@@ -142,6 +142,12 @@
 
 @media screen and (max-width: 767px) {
 
+	.quick-ex {
+		padding-top: 90px;
+		padding-bottom: 120px;
+		margin-bottom: 60px;
+	}
+
 	.quick-ex-col {
 		max-width: 400px;
 	}
@@ -155,6 +161,15 @@
 				transform: rotate(270deg);
 			}
 		}
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	.quick-ex {
+		padding-top: 75px;
+		padding-bottom: 90px;
 	}
 
 }
